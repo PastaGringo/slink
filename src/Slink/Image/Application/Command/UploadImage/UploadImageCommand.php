@@ -21,7 +21,7 @@ final readonly class UploadImageCommand implements CommandInterface {
    * @param string $description
    */
   public function __construct(
-    #[Assert\Image(maxSize: '5M', mimeTypes: ['image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/webp', 'image/svg+xml', 'image/svg', 'image/ico'])]
+    #[Assert\Image(maxSize: '5M', mimeTypes: ['image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/webp', 'image/svg+xml', 'image/svg', 'image/x-icon'])]
     private File $image,
     
     private bool $isPublic = false,
